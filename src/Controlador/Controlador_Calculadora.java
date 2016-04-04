@@ -28,7 +28,8 @@ public class Controlador_Calculadora implements ActionListener{
     public void actionPerformed(ActionEvent e) {
         if(e.getActionCommand().equalsIgnoreCase("Calcular")){
             //System.out.println("Entra");
-            manejo.realizarOperacion();
+            manejo.realizarOperacionSuma(ventana.getNumero());
+            manejo.realizarOperacionResta(ventana.getNumero());
         }
     }
     
